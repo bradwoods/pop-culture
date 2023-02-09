@@ -30,6 +30,10 @@
         <link href="/src/index.css" rel="stylesheet" />
         <link href="/src/variables.css" rel="stylesheet" />
         <link href="/src/grid.css" rel="stylesheet" />
+        <link href="/src/heavyMetal.css" rel="stylesheet" />
+        <link href="/src/matrix.css" rel="stylesheet" />
+        <link href="/src/doom.css" rel="stylesheet" />
+
         <script defer src="/src/matrix.ts"></script>
 
         <link rel="canonical" href="https://bradwoods.io" />
@@ -129,6 +133,11 @@
                     alt="Portrait of a man from a video game"
                     src="images/doom3880.webp"
                 />
+                <svg id="hud" aria-hidden="true" viewBox="0 0 220 220">
+                    <text x="8" y="12">X3</text>
+                    <text x="8" y="200">Ammo: 16</text>
+                    <text x="8" y="212">Health: 64%</text>
+                </svg>
             </div>
 
             <video class="default" autoplay muted loop>
@@ -149,7 +158,7 @@
                 />
             </div>
             <video class="default" autoplay muted loop>
-                <source src="videos/mtv.mp4" type="video/mp4" />
+                <source src="/videos/mtv.mp4" type="video/mp4" />
                 <p>An astronaut planting the MTV flag on the moon</p>
             </video>
             <div id="johnnyCab">

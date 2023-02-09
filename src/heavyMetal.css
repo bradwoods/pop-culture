@@ -1,0 +1,19 @@
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+img#heavyMetal {
+    position: absolute;
+    right: 94px;
+    top: 290px;
+
+    animation: moveUpDown 6s ease-in-out infinite;
+}
