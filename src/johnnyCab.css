@@ -1,0 +1,36 @@
+@keyframes onOff {
+    0%,
+    50% {
+        opacity: 1;
+    }
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+div#johnnyCab {
+    width: var(--size-min-square);
+    height: var(--size-min-square);
+
+    position: relative;
+}
+
+div#johnnyCab img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#johnnyCab img:nth-child(2),
+div#johnnyCab img:nth-child(3) {
+    opacity: 0;
+    animation: onOff 2s linear infinite;
+}
+
+div#johnnyCab img:nth-child(3) {
+    animation-delay: 1s;
+}
