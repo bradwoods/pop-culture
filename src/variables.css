@@ -1,0 +1,25 @@
+:root {
+    --size-min-square: 220px;
+
+    /* --gap-large: 16px; */
+    /* --gap-small: 8px; */
+
+    /* --weight-large: "wght" 900; */
+    /* --weight-small: "wght" 550; */
+
+    --white: hsl(0, 0%, 95%);
+    --gray-light: hsl(0, 0%, 75%);
+    --gray-med: hsl(210, 3%, 16%);
+    --gray-dark: hsl(240, 3%, 6%);
+    --yellow: hsl(37, 75%, 56%);
+
+    --color-heading: var(--white);
+    --color-text: var(--gray-light);
+    --color-cta: var(--yellow);
+
+    --gradient-background: radial-gradient(
+        ellipse at center,
+        var(--gray-med) 0%,
+        var(--gray-dark) 100%
+    );
+}

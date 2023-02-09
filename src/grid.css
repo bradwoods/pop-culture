@@ -6,13 +6,13 @@
 
     display: grid;
     grid:
-        ". . .          .       . . ." var(--size-min-square)
-        ". . .          .       . . ." var(--size-min-square)
-        ". . header     .       . . ." var(--size-min-square)
-        ". . .          main    . . ." var(--size-min-square)
-        ". . .          .       footer . ." var(--size-min-square)
-        ". . .          .       . . ." var(--size-min-square)
-        ". . .          .       . . ." var(--size-min-square)
+        ". . .          .       .           . ." var(--size-min-square)
+        ". . .          .       .           . ." var(--size-min-square)
+        ". . header     .       .           . ." var(--size-min-square)
+        ". . .          main    .           . ." var(--size-min-square)
+        ". . .          .       footer      . ." var(--size-min-square)
+        ". . .          .       .           . ." var(--size-min-square)
+        ". . .          .       .           . ." var(--size-min-square)
         / var(--size-min-square) var(--size-min-square) var(--size-min-square) var(
             --size-min-square
         )
@@ -21,20 +21,20 @@
 }
 
 #grid .square {
-    outline: 1px solid sandybrown;
+    outline: 1px solid var(--white);
 }
 
 #grid header {
     grid-area: header;
-    background: yellow;
+    background: var(--color-cta);
 }
 
 #grid main {
     grid-area: main;
-    background: yellow;
+    background: var(--color-cta);
 }
 
 #grid footer {
     grid-area: footer;
-    background: yellow;
+    background: var(--color-cta);
 }

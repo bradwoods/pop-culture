@@ -1,22 +1,3 @@
-:root {
-    --size-min-square: 220px;
-
-    /* --gap-large: 16px; */
-    /* --gap-small: 8px; */
-
-    /* --weight-large: "wght" 900; */
-    /* --weight-small: "wght" 550; */
-
-    /* --color-text-default: #bfbfbf;
-  --color-text-heading: #fff;
-  --color-text-overlay: #fff;
-  --color-cta: #e3a23a;
-  --color-border: #fff;
-  --color-background: #101011; */
-
-    /* --gradient-background: radial-gradient(ellipse at center, #272829 0%, #101011 100%); */
-}
-
 *,
 *::before,
 *::after {
@@ -38,6 +19,10 @@ body {
 
     position: relative;
     overflow: hidden;
+
+    background: var(--gradient-background);
+    background-attachment: fixed;
+    overscroll-behavior: none;
 }
 
 ul {
