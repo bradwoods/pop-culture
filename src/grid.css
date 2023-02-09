@@ -1,0 +1,40 @@
+#grid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid:
+        ". . .          .       . . ." var(--size-min-square)
+        ". . .          .       . . ." var(--size-min-square)
+        ". . header     .       . . ." var(--size-min-square)
+        ". . .          main    . . ." var(--size-min-square)
+        ". . .          .       footer . ." var(--size-min-square)
+        ". . .          .       . . ." var(--size-min-square)
+        ". . .          .       . . ." var(--size-min-square)
+        / var(--size-min-square) var(--size-min-square) var(--size-min-square) var(
+            --size-min-square
+        )
+        var(--size-min-square)
+        var(--size-min-square) var(--size-min-square);
+}
+
+#grid .square {
+    outline: 1px solid sandybrown;
+}
+
+#grid header {
+    grid-area: header;
+    background: yellow;
+}
+
+#grid main {
+    grid-area: main;
+    background: yellow;
+}
+
+#grid footer {
+    grid-area: footer;
+    background: yellow;
+}

@@ -1,3 +1,45 @@
-* {
-  color: hotpink;
+:root {
+    --size-min-square: 220px;
+
+    /* --gap-large: 16px; */
+    /* --gap-small: 8px; */
+
+    /* --weight-large: "wght" 900; */
+    /* --weight-small: "wght" 550; */
+
+    /* --color-text-default: #bfbfbf;
+  --color-text-heading: #fff;
+  --color-text-overlay: #fff;
+  --color-cta: #e3a23a;
+  --color-border: #fff;
+  --color-background: #101011; */
+
+    /* --gradient-background: radial-gradient(ellipse at center, #272829 0%, #101011 100%); */
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+
+    height: 100%;
+}
+
+body {
+    height: 100%;
+
+    position: relative;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
 }
