@@ -1,6 +1,6 @@
 {
-    "name": "Brad Woods - Front-end Engineer",
-    "short_name": "Brad Woods",
+    "name": "Pop Culture Relic",
+    "short_name": "POP Culture",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#eeeeee",
     "background_color": "#212023",
     "display": "standalone"
 }
