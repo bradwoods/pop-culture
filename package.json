@@ -3,10 +3,16 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
+    "config": {
+        "gardenpath": "../garden-bradwoods-io/public/experiments/pop-culture"
+    },
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "build-for-garden": "vite build --base=/experiments/pop-culture/",
+        "move-to-garden": "rm -rf $npm_package_config_gardenpath && mv ./dist $npm_package_config_gardenpath",
+        "build-and-move": "npm run build-for-garden && npm run move-to-garden"
     },
     "devDependencies": {
         "typescript": "^4.9.3",
