@@ -1,3 +1,4 @@
+// @ts-ignore
 (function () {
     const parentElem = document.querySelector("#matrix");
 
@@ -60,7 +61,7 @@
         const chars = getChars(charCount);
         const colSpans: HTMLElement[] = [];
 
-        chars.forEach((char, i) => {
+        chars.forEach((char) => {
             const span = document.createElement("span");
             span.textContent = char;
             span.style.opacity = `0`;
@@ -136,11 +137,13 @@
         let timeoutId: number;
 
         return function (...args: any) {
+            // @ts-ignore
             const context = this;
 
             clearTimeout(timeoutId);
 
             timeoutId = setTimeout(() => {
+                // @ts-ignore
                 callback.call(context, ...args);
             }, waitMS);
         };
