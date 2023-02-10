@@ -1,0 +1,54 @@
+@keyframes move {
+    0%,
+    30% {
+        left: calc(var(--size-square));
+        bottom: calc(2 * var(--size-square));
+    }
+    31%,
+    40% {
+        left: calc(var(--size-square));
+        bottom: calc(3 * var(--size-square));
+    }
+    41%,
+    50% {
+        left: calc(2 * var(--size-square));
+        bottom: calc(3 * var(--size-square));
+    }
+    51%,
+    80% {
+        left: calc(3 * var(--size-square));
+        bottom: calc(3 * var(--size-square));
+    }
+    81%,
+    90% {
+        left: calc(2 * var(--size-square));
+        bottom: calc(3 * var(--size-square));
+    }
+    91%,
+    100% {
+        left: calc(2 * var(--size-square));
+        bottom: calc(2 * var(--size-square));
+    }
+}
+
+@keyframes blink {
+    0%,
+    50% {
+        opacity: 1;
+    }
+    51%,
+    100% {
+        opacity: 0.5;
+    }
+}
+
+img#characterSelect {
+    width: calc(var(--size-square));
+
+    position: absolute;
+
+    z-index: var(--z-index-layer2);
+
+    animation: move 6s linear infinite, blink 100ms linear infinite;
+    pointer-events: none;
+}

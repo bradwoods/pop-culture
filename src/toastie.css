@@ -1,0 +1,29 @@
+@keyframes slide {
+    0%,
+    10% {
+        transform: translateX(100%);
+    }
+
+    11%,
+    14% {
+        transform: translateX(0);
+    }
+
+    15%,
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+img#toastie {
+    width: var(--size-square);
+    aspect-ratio: 1/1;
+
+    position: absolute;
+    bottom: var(--size-square);
+    right: 0;
+    z-index: var(--z-index-layer2);
+
+    animation: slide 24s linear infinite;
+    animation-fill-mode: both;
+}

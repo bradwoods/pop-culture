@@ -1,0 +1,18 @@
+img.overlay {
+    width: var(--size-square);
+    aspect-ratio: 1/1;
+
+    position: absolute;
+    z-index: var(--z-index-layer1);
+    pointer-events: none;
+}
+
+img#overlay1 {
+    right: 0;
+    bottom: calc(3 * var(--size-square));
+}
+
+img#overlay2 {
+    right: 0;
+    bottom: calc(1 * var(--size-square));
+}

@@ -1,0 +1,10 @@
+div#xMen {
+    display: flex;
+    align-items: flex-end;
+}
+
+div#xMen > img {
+    width: var(--size-square);
+    aspect-ratio: 1/3;
+    pointer-events: none;
+}

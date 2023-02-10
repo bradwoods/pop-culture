@@ -10,8 +10,8 @@
 }
 
 div#johnnyCab {
-    width: var(--size-min-square);
-    height: var(--size-min-square);
+    width: var(--size-square);
+    height: var(--size-square);
 
     position: relative;
 }

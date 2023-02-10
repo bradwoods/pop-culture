@@ -13,7 +13,8 @@
 img#heavyMetal {
     position: absolute;
     right: 94px;
-    top: 290px;
+    top: 330px;
+    z-index: var(--z-index-layer2);
 
     animation: moveUpDown 6s ease-in-out infinite;
 }
