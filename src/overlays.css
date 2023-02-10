@@ -13,6 +13,6 @@ img#overlay1 {
 }
 
 img#overlay2 {
-    right: 0;
-    bottom: calc(1 * var(--size-square));
+    right: var(--size-square);
+    top: 0;
 }
