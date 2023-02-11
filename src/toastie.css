@@ -1,4 +1,4 @@
-@keyframes slide {
+@keyframes toastie {
     0%,
     10% {
         transform: translateX(100%);
@@ -24,6 +24,6 @@ img#toastie {
     right: 0;
     z-index: var(--z-index-layer2);
 
-    animation: slide 24s linear infinite;
+    animation: toastie 24s linear infinite;
     animation-fill-mode: both;
 }

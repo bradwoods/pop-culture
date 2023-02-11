@@ -1,4 +1,4 @@
-@keyframes moveUpDown {
+@keyframes heavyMetal {
     0% {
         transform: translateY(0);
     }
@@ -16,5 +16,5 @@ img#heavyMetal {
     top: 330px;
     z-index: var(--z-index-layer2);
 
-    animation: moveUpDown 6s ease-in-out infinite;
+    animation: heavyMetal 6s ease-in-out infinite;
 }

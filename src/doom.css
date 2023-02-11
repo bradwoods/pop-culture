@@ -1,4 +1,4 @@
-@keyframes onOff {
+@keyframes doom {
     0%,
     33% {
         opacity: 1;
@@ -26,7 +26,7 @@ div#doom > img {
 
     opacity: 0;
 
-    animation: onOff 3s linear infinite;
+    animation: doom 3s linear infinite;
 }
 
 div#doom > img:nth-child(2) {

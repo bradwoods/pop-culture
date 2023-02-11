@@ -1,4 +1,4 @@
-@keyframes move {
+@keyframes charSelect {
     0%,
     30% {
         left: calc(var(--size-square));
@@ -49,6 +49,6 @@ img#characterSelect {
 
     z-index: var(--z-index-layer2);
 
-    animation: move 6s linear infinite, blink 100ms linear infinite;
+    animation: charSelect 6s linear infinite, blink 100ms linear infinite;
     pointer-events: none;
 }

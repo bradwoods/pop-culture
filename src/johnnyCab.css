@@ -1,4 +1,4 @@
-@keyframes onOff {
+@keyframes johnnyCab {
     0%,
     50% {
         opacity: 1;
@@ -28,7 +28,7 @@ div#johnnyCab img {
 div#johnnyCab img:nth-child(2),
 div#johnnyCab img:nth-child(3) {
     opacity: 0;
-    animation: onOff 2s linear infinite;
+    animation: johnnyCab 2s linear infinite;
 }
 
 div#johnnyCab img:nth-child(3) {
