@@ -42,6 +42,13 @@ img#lordOfRings {
     aspect-ratio: 1/3;
 }
 
+img#highlander {
+    position: absolute;
+    bottom: var(--size-square);
+    right: var(--size-square);
+    z-index: var(--z-index-layer1);
+}
+
 img#jessicaRabbit {
     position: absolute;
     bottom: var(--size-square);
@@ -58,4 +65,11 @@ img#roadRunner {
 img#pulpFiction {
     width: var(--size-square);
     align-self: flex-end;
+}
+
+img#astroBoy {
+    position: absolute;
+    top: calc(var(--size-square) + 140px);
+    left: 100px;
+    z-index: var(--z-index-layer2);
 }

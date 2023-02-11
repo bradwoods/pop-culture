@@ -47,7 +47,7 @@ img#characterSelect {
 
     position: absolute;
 
-    z-index: var(--z-index-layer2);
+    z-index: var(--z-index-layer1);
 
     animation: charSelect 6s linear infinite, blink 100ms linear infinite;
     pointer-events: none;

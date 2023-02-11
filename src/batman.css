@@ -1,0 +1,18 @@
+@keyframes batman {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(60px, 30px);
+    }
+}
+
+img#batman {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: var(--z-index-layer2);
+
+    opacity: 0.2;
+    animation: batman 18s ease-in-out infinite alternate-reverse;
+}
