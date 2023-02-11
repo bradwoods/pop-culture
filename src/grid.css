@@ -3,6 +3,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* For toastie */
+    overflow: hidden;
 
     display: grid;
     grid-template-columns: repeat(7, var(--size-square));
@@ -10,7 +12,7 @@
 }
 
 #grid > * {
-    filter: grayscale(1);
+    filter: sepia(0.8) grayscale(0.5);
 }
 
 #grid > *:hover {
