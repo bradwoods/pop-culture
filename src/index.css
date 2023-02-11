@@ -20,7 +20,11 @@ body {
     position: relative;
     overflow: hidden;
 
-    background: var(--gradient-background);
+    background: radial-gradient(
+        ellipse at center,
+        var(--gray-med) 0%,
+        var(--gray-dark) 100%
+    );
     background-attachment: fixed;
     overscroll-behavior: none;
 }

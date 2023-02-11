@@ -6,10 +6,4 @@
     --gray-light: hsl(0, 0%, 75%);
     --gray-med: hsl(210, 3%, 16%);
     --gray-dark: hsl(240, 3%, 6%);
-
-    --gradient-background: radial-gradient(
-        ellipse at center,
-        var(--gray-med) 0%,
-        var(--gray-dark) 100%
-    );
 }
