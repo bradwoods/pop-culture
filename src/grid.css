@@ -3,8 +3,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* For toastie */
-    overflow: hidden;
 
     display: grid;
     grid-template-columns: repeat(7, var(--size-square));
@@ -30,9 +28,11 @@ video#starWars {
 }
 
 img#arcane {
-    grid-column: 1 / span 2;
     width: calc(2 * var(--size-square));
-    aspect-ratio: 2/1;
+
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 img#lordOfRings {
@@ -72,4 +72,11 @@ img#astroBoy {
     top: calc(var(--size-square) + 140px);
     left: 100px;
     z-index: var(--z-index-layer2);
+}
+
+img#daftPunk {
+    position: absolute;
+    top: calc(2 * var(--size-square));
+    left: calc(4 * var(--size-square));
+    z-index: var(--z-index-layer1);
 }

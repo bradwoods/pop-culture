@@ -15,14 +15,20 @@
     }
 }
 
-img#toastie {
+div#toastie {
     width: var(--size-square);
-    aspect-ratio: 1/1;
+    height: var(--size-square);
 
     position: absolute;
     bottom: var(--size-square);
     right: 0;
     z-index: var(--z-index-layer2);
+    overflow: hidden;
+}
+
+div#toastie > img {
+    width: 100%;
+    height: 100%;
 
     animation: toastie 24s linear infinite;
     animation-fill-mode: both;
